@@ -368,7 +368,7 @@ a{
 /* ============================Why choose us==================================================== */
 #chooseUs_section{
     background-color: #7CBC99;
-    margin-top: 12em;
+    margin-top: 6em !important;
 }
 #chooseUs_section h1{
     color: #fff;

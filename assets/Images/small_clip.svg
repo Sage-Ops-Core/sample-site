@@ -1,9 +1,30 @@
-<svg width="296" height="250" viewBox="0 0 296 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M182.299 66.2897C141.511 38.6893 64.2669 6.01899 39 0L295.759 0.121188L296 151C261.789 124.258 213.389 87.3279 182.299 66.2897Z" fill="url(#paint0_linear_407_382)"/>
-<defs>
-<linearGradient id="paint0_linear_407_382" x1="176.283" y1="31.7512" x2="217.938" y2="130.305" gradientUnits="userSpaceOnUse">
-<stop stop-color="#29563E" stop-opacity="0.72"/>
-<stop offset="1" stop-color="#C6D5CE"/>
-</linearGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.10417in" height="3.47165in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 4104.17 3471.65"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:none}
+    .fil0 {fill:#043C2C}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M-0 0l4104.17 0 0 3471.65 -4104.17 0 0 -3471.65z"/>
+   </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g id="_2672062409248">
+    <path class="fil0" d="M510.37 -10.41l4670.08 -238.57 -1064.29 2345.66c-499.58,-329.78 -1702.74,-1550.79 -3605.79,-2107.09z"/>
+   </g>
+  </g>
+  <polygon class="fil1" points="-0,0 4104.17,0 4104.17,3471.65 -0,3471.65 "/>
+ </g>
 </svg>
