@@ -179,6 +179,14 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
 ></script>
 <script src="assets/JS/main.js"></script>
+<script>
+    setTimeout(()=> {
+        (async function () {
+            let response = await (await fetch('http://localhost:3000/api/v1/FAQ/List')).json()
+            console.log(response);
+        })()
+    }, 100);
+</script>
 
 </body>
 </html>
