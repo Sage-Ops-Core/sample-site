@@ -1,22 +1,28 @@
 /* ================================Footer CSS============================ */
-#footer_section{
+.container {
+    background-image: none !important;
+}
+
+#footer_section {
     padding: 5em 5em 2em 5em;
 }
 
-.footer_container{
+.footer_container {
     display: flex;
     gap: 24px;
     border-bottom: 2px solid #31674E;
     padding-bottom: 4em;
 }
-.footer_container h1{
+
+.footer_container h1 {
     font-weight: 600;
     font-size: 20px;
     line-height: 50px;
     letter-spacing: -0.04em;
     color: #31674E;
 }
-.footer_copyright{
+
+.footer_copyright {
     padding: 3em;
     margin: auto;
     text-align: center;
@@ -26,56 +32,62 @@
 .footer_about,
 .footer_socials,
 .footer_contact,
-.footer_app{
+.footer_app {
     max-width: 300px !important;
 }
 
-.footer_about p{
+.footer_about p {
     color: #32684F;
     padding: 1.5em 1.2em 0 0;
 }
+
 .email,
-.location{
+.location {
     display: flex;
     color: #31674E;
     margin-bottom: .5em;
     font-weight: 500;
     line-height: 24px;
 }
-.contact_content{
+
+.contact_content {
     margin-top: 1.5em;
 }
-.contact_content p{
+
+.contact_content p {
     padding: 0em 0 0 1em;
 }
-#address{
+
+#address {
     padding: 1em 0 0 1em;
 }
 
-.footer_socials p{
+.footer_socials p {
     color: #31674E;
     margin-top: 1em;
 }
-.social_links{
+
+.social_links {
     display: flex;
     margin-top: 1em;
     height: 28px;
 }
 
-.facebook{
+.facebook {
     margin: 0;
     padding: 0 1em 0 0;
 }
+
 .instagram,
 .twitter,
-.youtube{
+.youtube {
     margin: 0;
     padding: 0 1em;
     border-left: 1px solid #31674E;
     align-self: center;
 }
 
-.download_button{
+.download_button {
     margin-top: 1.5em;
 }
 
@@ -87,7 +99,7 @@
     padding: 7rem;
 }
 
-.thanks_section{
+.thanks_section {
     padding: 4em 2em;
     display: flex;
     flex-direction: column;
@@ -96,23 +108,23 @@
     text-align: center;
 }
 
-.thanks_section > *{
+.thanks_section > * {
     margin-top: 2em;
 }
 
-.thanks_body h2{
-    color:#001533;
+.thanks_body h2 {
+    color: #001533;
     font-size: 30px;
     line-height: 54px;
 }
 
-.thanks_body h5{
-    color:#001533;
+.thanks_body h5 {
+    color: #001533;
     font-size: 16px;
     line-height: 30px;
 }
 
-.thanks_section a{
+.thanks_section a {
     color: #08321F;
     font-weight: 700;
 }
