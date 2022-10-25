@@ -32,6 +32,7 @@
 <body>
 <div id="vapp">
     <!-- Navbar -->
+    <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Container wrapper -->
@@ -60,28 +61,21 @@
                         />
                     </a>
                     <!-- Left links -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <li class="nav-item">
-                            <a class=" btn btn-outline-success btn-rounded" href="/index.html">Home</a>
-                        </li>
-
-                    </ul>
                     <!-- Left links -->
                 </div>
                 <!-- Collapsible wrapper -->
 
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
-                    <div class="input-group">
-                        <div class="form-outline">
-                            <input type="search" id="form1" class="form-control"/>
-                            <label class="form-label" for="form1">Search</label>
-                        </div>
-                        <button type="button" class="btn btn-success" @click="Search()">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+                      <li class="nav-item">
+                          <a class=" btn btn-outline-success btn-rounded" href="#">Home</a>
+                      </li>
+
+                  </ul>
+
                 </div>
                 <!-- Right elements -->
             </div>
@@ -90,16 +84,25 @@
         <!-- Jumbotron -->
         <div class="p-5 text-center bg-light"
              style="background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);">
+
             <h1 class="mb-3 text-white">Frequently Asked Questions</h1>
             <!--        <h4 class="mb-3">Subheading</h4>-->
-            <a class="btn btn-light" href="/index.html" role="button">Home</a>
+            <a class="btn btn-light" href="./index.html" role="button">Home</a>
+            <br><br>
+            <div class="input-group input-group-lg">
+              <input type="search" id="form1" class="form-control" aria-label="Type here..." placeholder="Type keyword here..."/>
+              <button type="button" class="btn btn-success" @click="Search()">
+                  <i class="fas fa-search"></i>
+              </button>
+            </div>
             <br>
-            <br>
-            <h5 class="mb-3 text-white">Search Results For: {{search}} </h5>
+            <h5 class="text-white">Search result for: {{search}}</h5>
 
         </div>
         <!-- Jumbotron -->
     </header>
+
+    <!-- Navbar -->
 
     <!-- Navbar -->
     <br>
@@ -210,21 +213,21 @@
                     this.faq = faq;
                     this.search = search
                 } else {
-                    window.location.href = this.baseurl + '/sample-site/faq.html'
+                    window.location.href = './faq.html'
                 }
             },
 
             async Search() {
                 let search = document.getElementById('form1').value;
-                let response = await (await fetch(`http://localhost:3000/api/v1/FAQ/Search?search=${search}`)).json()
+                let response = await (await fetch(`https://bot.cryptomarkings.net/api/v1/FAQ/Search?search=${search}`)).json()
                 window.localStorage.setItem('result', JSON.stringify(response.data))
                 window.localStorage.setItem('search', JSON.stringify(search))
-                window.location.href = this.baseurl + '/sample-site/faq-search.html'
+                window.location.href = './faq-search.html'
             },
 
             storeTid(article) {
                 window.localStorage.setItem('article', JSON.stringify(article))
-                window.location.href = this.baseurl + '/sample-site/faq-details.html'
+                window.location.href = './faq-details.html'
             }
         },
         created() {

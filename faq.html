@@ -53,7 +53,7 @@
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Navbar brand -->
-                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <a class="navbar-brand mt-2 mt-lg-0" href="./index.html">
                         <img
                                 src="assets/Images/crypto-logo.png" alt="CryptoMarkings"
                                 height="50"
@@ -71,7 +71,7 @@
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                       <li class="nav-item">
-                          <a class=" btn btn-outline-success btn-rounded" href="#">Home</a>
+                          <a class=" btn btn-outline-success btn-rounded" href="./index.html">Home</a>
                       </li>
 
                   </ul>
@@ -87,11 +87,11 @@
 
             <h1 class="mb-3 text-white">Frequently Asked Questions</h1>
             <!--        <h4 class="mb-3">Subheading</h4>-->
-            <a class="btn btn-light" href="/index.html" role="button">Home</a>
+            <a class="btn btn-light" href="./index.html" role="button">Home</a>
 <br>
 <br>
             <div class="input-group input-group-lg">
-              <input type="search" id="form1" class="form-control" aria-label="Type here..." />
+              <input type="search" id="form1" class="form-control" aria-label="Type here..."  placeholder="Type keyword here..."/>
               <button type="button" class="btn btn-success" @click="Search()">
                   <i class="fas fa-search"></i>
               </button>
@@ -205,21 +205,24 @@
         },
         methods: {
             async Search() {
+                this.loading = true
+
                 let search = document.getElementById('form1').value;
-                let response = await (await fetch(`http://localhost:3000/api/v1/FAQ/Search?search=${search}`)).json()
+                let response = await (await fetch(`https://bot.cryptomarkings.net/api/v1/FAQ/Search?search=${search}`)).json()
                 window.localStorage.setItem('result', JSON.stringify(response.data))
                 window.localStorage.setItem('search', JSON.stringify(search))
-                window.location.href = this.baseurl + '/sample-site/faq-search.html'
+                this.loading = false
+                window.location.href = './faq-search.html'
             },
             async faqList() {
               this.loading = true
-                let response = await (await fetch('http://localhost:3000/api/v1/FAQ/List')).json()
+                let response = await (await fetch('https://bot.cryptomarkings.net/api/v1/FAQ/List')).json()
                 this.faq = response.data;
                 this.loading = false
             },
             storeTid(topic) {
                 window.localStorage.setItem('topic', JSON.stringify(topic))
-                window.location.href = this.baseurl + '/sample-site/faq-list.html'
+                window.location.href = './faq-list.html'
             }
         },
         mounted() {
