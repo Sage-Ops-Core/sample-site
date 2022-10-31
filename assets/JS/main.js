@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
 
 const countDown = () => {
     //set the date we are counting down to
-    const countDownDate = new Date("Oct 31, 2022 00:00:00").getTime();
+    const countDownDate = new Date("Nov 30, 2022 00:00:00").getTime();
 
     //Get today's date and time
     const nowDate = new Date().getTime();
