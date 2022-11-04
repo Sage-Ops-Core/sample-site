@@ -96,7 +96,7 @@ id="btn-back-to-top"
 <br>
 <br>
             <div class="input-group input-group-lg">
-              <input type="search" id="form1" class="form-control" aria-label="Type here..."  placeholder="Type keyword here..."/>
+              <input type="search" @keyup.enter="Search" id="form1" class="form-control" aria-label="Type here..."  placeholder="Type keyword here..."/>
               <button type="button" class="btn btn-success" @click="Search()">
                   <i class="fas fa-search"></i>
               </button>
@@ -183,7 +183,7 @@ id="btn-back-to-top"
         <div class="footer_app">
             <h1>Download our app</h1>
             <div class="download_button">
-                <a href="#"><img src="assets/Images/GooglePlaybutton.svg" alt="F"></a>
+                    <a href="https://play.google.com/store/apps/details?id=net.cryptomarkings.app" target="_blank"><img src="assets/Images/GooglePlaybutton.svg" alt="F"></a>
                 <a href="#"><img src="assets/Images/AppleStorebutton.svg" alt="F"></a>
             </div>
         </div>
