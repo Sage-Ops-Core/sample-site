@@ -72,7 +72,7 @@ id="btn-back-to-top"
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Navbar brand -->
-                    <a class="navbar-brand mt-2 mt-lg-0" href="./index.html">
+                    <a class="navbar-brand mt-2 mt-lg-0" href="./">
                         <img
                                 src="assets/Images/crypto-logo.png" alt="CryptoMarkings"
                                 height="50"
@@ -95,7 +95,7 @@ id="btn-back-to-top"
 
             <h1 class="mb-3 text-white">Frequently Asked Questions</h1>
             <!--        <h4 class="mb-3">Subheading</h4>-->
-            <a class="btn btn-light" href="./index.html" role="button">Home</a>
+            <a class="btn btn-light" href="./" role="button">Home</a>
 <br>
 <br>
             <div class="input-group input-group-lg">
@@ -221,7 +221,7 @@ id="btn-back-to-top"
                 window.localStorage.setItem('result', JSON.stringify(response.data))
                 window.localStorage.setItem('search', JSON.stringify(search))
                 this.loading = false
-                window.location.href = './faq-search.html'
+                window.location.href = './faq-search'
             },
             async faqList() {
               this.loading = true
@@ -231,7 +231,7 @@ id="btn-back-to-top"
             },
             storeTid(topic) {
                 window.localStorage.setItem('topic', JSON.stringify(topic))
-                window.location.href = './faq-list.html'
+                window.location.href = './faq-list'
             }
         },
         mounted() {
