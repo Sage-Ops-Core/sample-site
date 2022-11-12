@@ -456,6 +456,14 @@ id="btn-back-to-top"
     </div>
 </section>
 <!-- ==================End FooterSection============== -->
+<script>
+    (()=>{
+        var url = window.location.href;
+url = url.split('.html')[0];
+//url = url.substring(0, url.lastIndexOf("."));
+window.history.replaceState( null, null, url );
+    })()
+</script>
 <!-- MDB -->
 <script
         type="text/javascript"
@@ -488,6 +496,7 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 </script>
 </body>
 </html>
